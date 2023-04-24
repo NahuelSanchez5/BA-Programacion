@@ -1,4 +1,35 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    background-color: rgb(27, 80, 62);
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.box-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.titulo{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(85, 170, 36);
+    border-radius: 15px;
+    height: 8rem;
+    width: 80rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

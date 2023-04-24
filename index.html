@@ -6,83 +6,129 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Tarea 1</title>
+        
     </head>
     <body>
         <header>
-            <h1>TOP - MUSICA DE SPOTIFY</h1>
-            <p> En esta página presentaré un top 5 música más escuchada en Spotify. <br>
-                Las categoriass que encontrarán son top mundial y el top de Argentina.
-            </p>
-            <h3>COMENCEMOS!!</h3>
+            <div class="box-titulo">
+                <h1 class="titulo">TOP - MUSICA DE SPOTIFY</h1>
+            </div>
+                <p> En esta página presentaré un top 5 música más escuchada en Spotify. <br>
+                    Las categoriass que encontrarán son top mundial y el top de Argentina.</p>
+                <h3>COMENCEMOS!!</h3>     
         </header>
         <main>
-            <strong> <h2>TOP MUNDIAL</h2></strong>
-            <ol>
-                <li>
-                    <strong> Flowers - MILEY CIRUS</strong>
-                    <br>Cantidad de reproducciones: 45.922.865 
-                    <br><a href="https://open.spotify.com/track/4DHcnVTT87F0zZhRPYmZ3B?si=b58cfe63c2404c18">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/flowers.jpg" alt=""></picture>
-                </li> <br>
-                <li>
-                    <strong> TQG - KAROL G, SHAKIRA</strong>
-                    <br>Cantidad de reproducciones: 39.309.877
-                    <br><a href="https://open.spotify.com/track/0DWdj2oZMBFSzRsi2Cvfzf?si=eb04e8f9209641cb">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/tqg.jpg" alt=""></picture>
-                </li> <br>
-                <li>
-                    <strong> Kill Bill - SZA</strong>
-                    <br>Cantidad de reproducciones: 37.595.052
-                    <br><a href="https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL?si=89fa2a8641a64d4b">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/kb.jpg" alt=""></picture>
-                </li><br>
-                <li>
-                    <strong> Boy's a liar - PINKPANTHERESS, ICE SPICE</strong>
-                    <br>Cantidad de reproducciones: 31.883.306
-                    <br><a href="https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv?si=70409fff8e4f40f4">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/boy's.jpg" alt=""></picture>
-                </li><br>
-                <li>
-                    <strong> BESO - ROSALÍA, RAUW ALEJANDRO</strong>
-                    <br>Cantidad de reproducciones: 30.932.834
-                    <br><a href="https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv?si=70409fff8e4f40f4">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/beso.jpg" alt=""></picture>
-                </li><br>
-            </ol>
+            
+            <section>
+            <form style="padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                <div style="display: flex; flex-direction: column; margin-bottom: 10px;">
+                <label style="margin-bottom: 5px; font-weight: bold;">Nombre:</label>
+                <input type="text" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                </div>
+                <div style="display: flex; flex-direction: column; margin-bottom: 10px;">
+                <label style="margin-bottom: 5px; font-weight: bold;">Apellido:</label>
+                <input type="text" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                </div>
+                <div style="display: flex; flex-direction: column; margin-bottom: 10px;">
+                <label style="margin-bottom: 5px; font-weight: bold;">Gusto musical:</label>
+                <select required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="hiphop">Hip Hop</option>
+                    <option value="country">Country</option>
+                    <option value="soul">Soul</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="classical">Clásica</option>
+                </select>
+                </div>
+                <button type="submit" style="background-color: #3f51b5; color: #fff; padding: 8px 12px; border: none; border-radius: 3px; cursor: pointer;">Enviar</button>
+            </form>
+            </section>
+            ```
+            <template>
+                <form style="display: flex; flex-direction: column; width: 300px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                  <label style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">Iniciar sesión</label>
+                  <input type="email" placeholder="Correo electrónico" style="padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                  <input type="password" placeholder="Contraseña" style="padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                  <button style="padding: 10px; background-color: #4CAF50; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Iniciar sesión</button>
+                </form>
+            </template>
+            
+        
 
-            <strong><h2>TOP ARGENTINA</h2></strong>
-            <ol>
-                <li>
-                    <strong> En la Intimidad | CROSSOVER #1 - BIG ONE, EMILIA CALLEJERO FINO</strong>
-                    <br>Cantidad de reproducciones: 4.133.954 
-                    <br><a href="https://open.spotify.com/track/7w7BrPbOjF5OxChs2dxFve?si=17442a0705f44e91">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/intimidad.jpg" alt=""></picture>
-                </li> <br>
-                <li>
-                    <strong> M.A. (Mejores Amigos) - BM, PHONTANA</strong>
-                    <br>Cantidad de reproducciones: 3.763.749
-                    <br><a href="https://open.spotify.com/track/1eIDsKCLwZF6CJK8pOgHX5?si=63ee4a68b6204c8c">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/MA.jpg" alt=""></picture>
-                </li> <br>
-                <li>
-                    <strong> TQG - KAROL G, SHAKIRA</strong>
-                    <br>Cantidad de reproducciones: 3.313.336
-                    <br><a href="https://open.spotify.com/track/0DWdj2oZMBFSzRsi2Cvfzf?si=eb04e8f9209641cb">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/tqg.jpg" alt=""></picture>
-                </li><br>
-                <li>
-                    <strong> Rara vez - TAIU, MILO J</strong>
-                    <br>Cantidad de reproducciones: 3.187.684
-                    <br><a href="https://open.spotify.com/track/7MVIfkyzuUmQ716j8U7yGR?si=854c1664736c44db">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/raravez.jpg" alt=""></picture>
-                </li><br>
-                <li>
-                    <strong> Ya no vuelvas (version cuarteto) - LUCK RA, LA K'ONGA, KE PERSONAJES</strong>
-                    <br>Cantidad de reproducciones: 3.073.197
-                    <br><a href="https://open.spotify.com/track/6jRZ33ifS5VOTMwmPxhPhN?si=b3ea030507474950">¡Escuchala aqui!</a>
-                    <br> <br> <picture> <img src="/img/ynv(vc).jpg" alt=""></picture>
-                </li><br>
-            </ol>
+            <strong> <h2 class="sub-titulo">TOP MUNDIAL</h2></strong>
+
+            <div>
+                <ol class="box">
+                    <li>
+                        <strong> Flowers - MILEY CIRUS</strong>
+                        <br>Cantidad de reproducciones: 45.922.865 
+                        <br><a href="https://open.spotify.com/track/4DHcnVTT87F0zZhRPYmZ3B?si=b58cfe63c2404c18">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/flowers.jpg" alt=""></picture>
+                    </li> <br>
+                    <li>
+                        <strong> TQG - KAROL G, SHAKIRA</strong>
+                        <br>Cantidad de reproducciones: 39.309.877
+                        <br><a href="https://open.spotify.com/track/0DWdj2oZMBFSzRsi2Cvfzf?si=eb04e8f9209641cb">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/tqg.jpg" alt=""></picture>
+                    </li> <br>
+                    <li>
+                        <strong> Kill Bill - SZA</strong>
+                        <br>Cantidad de reproducciones: 37.595.052
+                        <br><a href="https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL?si=89fa2a8641a64d4b">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/kb.jpg" alt=""></picture>
+                    </li><br>
+                    <li>
+                        <strong> Boy's a liar - PINKPANTHERESS, ICE SPICE</strong>
+                        <br>Cantidad de reproducciones: 31.883.306
+                        <br><a href="https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv?si=70409fff8e4f40f4">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/boy's.jpg" alt=""></picture>
+                    </li><br>
+                    <li>
+                        <strong> BESO - ROSALÍA, RAUW ALEJANDRO</strong>
+                        <br>Cantidad de reproducciones: 30.932.834
+                        <br><a href="https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv?si=70409fff8e4f40f4">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/beso.jpg" alt=""></picture>
+                    </li><br>
+                </ol>
+            </div>
+
+            <strong><h2 class="sub-titulo">TOP ARGENTINA</h2></strong>
+            <div>
+                <ol class="box">
+                    <li>
+                        <strong> En la Intimidad | CROSSOVER #1 - BIG ONE, EMILIA CALLEJERO FINO</strong>
+                        <br>Cantidad de reproducciones: 4.133.954 
+                        <br><a href="https://open.spotify.com/track/7w7BrPbOjF5OxChs2dxFve?si=17442a0705f44e91">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/intimidad.jpg" alt=""></picture>
+                    </li> <br>
+                    <li>
+                        <strong> M.A. (Mejores Amigos) - BM, PHONTANA</strong>
+                        <br>Cantidad de reproducciones: 3.763.749
+                        <br><a href="https://open.spotify.com/track/1eIDsKCLwZF6CJK8pOgHX5?si=63ee4a68b6204c8c">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/MA.jpg" alt=""></picture>
+                    </li> <br>
+                    <li>
+                        <strong> TQG - KAROL G, SHAKIRA</strong>
+                        <br>Cantidad de reproducciones: 3.313.336
+                        <br><a href="https://open.spotify.com/track/0DWdj2oZMBFSzRsi2Cvfzf?si=eb04e8f9209641cb">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/tqg.jpg" alt=""></picture>
+                    </li><br>
+                    <li>
+                        <strong> Rara vez - TAIU, MILO J</strong>
+                        <br>Cantidad de reproducciones: 3.187.684
+                        <br><a href="https://open.spotify.com/track/7MVIfkyzuUmQ716j8U7yGR?si=854c1664736c44db">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/raravez.jpg" alt=""></picture>
+                    </li><br>
+                    <li>
+                        <strong> Ya no vuelvas (version cuarteto) - LUCK RA, LA K'ONGA, KE PERSONAJES</strong>
+                        <br>Cantidad de reproducciones: 3.073.197
+                        <br><a href="https://open.spotify.com/track/6jRZ33ifS5VOTMwmPxhPhN?si=b3ea030507474950">¡Escuchala aqui!</a>
+                        <br> <br> <picture> <img src="/img/ynv(vc).jpg" alt=""></picture>
+                    </li><br>
+                </ol>
+            </div>
         </main>
     </body>
 </html>
